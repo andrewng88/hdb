@@ -1,0 +1,4 @@
+streamlit==0.57.3
+scikit-learn==0.22.1
+plotly.express
+pydeck==0.3.0
