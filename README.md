@@ -103,7 +103,7 @@ Hence, feature selection will be useful in this area.
 
 ## Author
 
-**Andrew Ng ** - [linkedin](https://www.linkedin.com/in/sc-ng-andrew/)
+**Andrew Ng ** - [linkedin](https://www.linkedin.com/in/sc-ng-andrew/)<br>
 **Lau Lee Ling ** - [linkedin](https://www.linkedin.com/in/lauleeling/)
 
 ## Acknowledgments
