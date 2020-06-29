@@ -47,7 +47,7 @@ def main():
         In order to help flat buyers and flat sellers make an informed decision, we decided to find out more about resale flat prices in Singapore.\
         Ultimately, we want to predict the price of resale flats in Singapore.')
 
-        st.markdown('Complete notebook can be found [here](http://data.gov.sg/dataset/resale-flat-prices)')
+        st.markdown('Complete notebook can be found [here](https://nbviewer.jupyter.org/github/andrewng88/hdb/blob/master/2_Exploratory_Data_Analysis.ipynb)')
 
         st.subheader("The Data")
         st.markdown('Obtained from [Data.gov.sg](http://data.gov.sg/dataset/resale-flat-prices)\
@@ -82,22 +82,22 @@ def main():
         90% to 80% - meaning buyers have to pay more initally.')
 
         # display overall dollar per square meter based on flat type
-        data['dollar_per_sq_m'] = data['resale_price']/data['floor_area_sqm']
-        table3 = data.groupby(["year_sold",'flat_type'])["dollar_per_sq_m",].agg(["median"]).reset_index()
-        table3.rename(columns={"median": "dollar_per_sq_meter"},inplace=True)
-        dollar_per_sq_m = px.line(table3,x="year_sold",y="dollar_per_sq_m",color = 'flat_type')
-        dollar_per_sq_m.update_layout(title_text='Median Dollar Per Square Meter between 1990 and 2019 based on flat type',template='ggplot2')
-        st.plotly_chart(dollar_per_sq_m)
+        data['dollar_psf'] = data['resale_price']/(data['floor_area_sqm']*10.764)
+        table3 = data.groupby(["year_sold",'flat_type'])["dollar_psf",].agg(["median"]).reset_index()
+        table3.rename(columns={"median": "dollar_psf"},inplace=True)
+        dollar_per_sq_f = px.line(table3,x="year_sold",y="dollar_psf",color = 'flat_type')
+        dollar_per_sq_f.update_layout(title_text='Median Dollar Per Square Feet between 1990 and 2019 based on flat type',template='ggplot2')
+        st.plotly_chart(dollar_per_sq_f)
 
         # chart commentary
         st.markdown('Similar trend if we break down based on flat type, the median went up by two fold from 2007 to 2013 and gradually\
         went down because of additional cooling measures')
 
         # display overall dollar per square meter based on storey
-        table4 = data.groupby(["year_sold",'storey_range'])["dollar_per_sq_m",].agg(["median"]).reset_index()
-        table4.rename(columns={"median": "dollar_per_sq_meter"},inplace=True)
-        median_storey = px.line(table4,x="year_sold",y="dollar_per_sq_m",color = 'storey_range')
-        median_storey.update_layout(title_text='Median Dollar Per Square Meter between 1990 and 2019 based on storey',template='ggplot2')
+        table4 = data.groupby(["year_sold",'storey_range'])["dollar_psf",].agg(["median"]).reset_index()
+        table4.rename(columns={"median": "dollar_psf"},inplace=True)
+        median_storey = px.line(table4,x="year_sold",y="dollar_psf",color = 'storey_range')
+        median_storey.update_layout(title_text='Median Dollar Per Square Feet between 1990 and 2019 based on storey',template='ggplot2')
         st.plotly_chart(median_storey)
 
         st.markdown('Similar trend if we break down based on storey, but for high storey more than 40, price is still climbing.\
@@ -107,7 +107,7 @@ def main():
         accurate reflection of the current situation.In addition, with the cooling measures still in place, using data from 2013\
         will ensure consistency in this aspect.')
 
-        st.markdown('Complete notebook can be found [here](http://data.gov.sg/dataset/resale-flat-prices)')
+        st.subheader('Complete notebook can be found [here](https://nbviewer.jupyter.org/github/andrewng88/hdb/blob/master/2_Exploratory_Data_Analysis.ipynb)')
 
     # When 'Interactive Charts' is selected at the menu.
 
@@ -115,7 +115,7 @@ def main():
         st.title('Interactive Charts')
 
         # 3D map component
-        st.subheader("HDB Transactions Vizualized using 3D")
+        st.subheader("HDB Transactions Visualized using 3D")
         # from 1990 to 2019, defaults to 2019
         year = st.slider('Year to look at',1990,2019,2019) 
         data = data[data['year_sold'] == year]
@@ -268,7 +268,7 @@ def main():
             sample_data = pd.DataFrame(sample_data, columns = list_columns) 
 
             #load model and predict
-            predictor = load_prediction_models('data/ridge.sav')
+            predictor = load_prediction_models('data/rf.sav')
             predictor.predict(sample_data)
 
             #display data input
@@ -294,7 +294,7 @@ def main():
             #display other HDB data from the same block
             st.subheader("Other transactions from 2013 onwards(sorted by latest transaction)")
             st.dataframe(data2013[data2013['postcode']==int(input_postcode)].sort_values(by='month', ascending=False)\
-            [['resale_price','dollar_per_sq_m','month','flat_type','flat_model','storey_range','lease_commence_date','floor_area_sqm']])
+            [['resale_price','dollar_psf','month','flat_type','flat_model','storey_range','lease_commence_date','floor_area_sqm']])
 
         #message to display if Postcode does not exists
         else:
@@ -303,10 +303,10 @@ def main():
     if choices == 'About':
          st.header('About')
          
-         st.subheader('Project done by')
+         st.subheader('Project by:')
          st.markdown('**Andrew Ng** andrew77@gmail.com')
          st.markdown('https://www.linkedin.com/in/sc-ng-andrew/')
-         st.markdown('**Lee Ling** lauleeling13@gmail.com')
+         st.markdown('**Lau Lee Ling** lauleeling13@gmail.com')
          st.markdown('https://www.linkedin.com/in/lauleeling/')
     
 if __name__=='__main__':
