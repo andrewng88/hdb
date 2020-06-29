@@ -61,14 +61,14 @@ We will only be using explainable algorithms Linear Regression ( Lasso, Ridge , 
 
 Linear Regression is the vanila model whereby there is no regularization introduced whereas
 Lasso, Ridge and Elasticnet has regularization which will prevent overfitting.
-
+<br><br>
 Usually **Lasso** will be used for feature selection<br>
 ![](https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1543418448/eq11_ij4mms.png)<br>
 The LHS is the minimization cost function and the RHS is the regularization term. The features are
 optimized based on Beta and there is high tendency that features will be zero-ed. 
 The lambda is the hyperparameter that can be optimzied by sklearn<br>. Lambda of zero will convert Lasso
 to plain Linear Regression. <br>Drawing parallel to sklearn , alpha is the same as lambda.
-<br>
+<br><br>
 ![](https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1543418449/eq7_ylxudw.png)<br>
 With respect to **Ridge**, the beta is squared hence the tendency to reduce the co-efficients to infinitesimal 
 but not zero. It helps with reducing multi-collinearity too.
