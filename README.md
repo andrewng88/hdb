@@ -27,12 +27,13 @@ Project started mid May 2020 and due to complete by mid April.
 * :+1: Scraping longitude, latitude for MRTs untill 2025 ( includes those that are yet to be opened but with price factored in )
 * :+1: Scraping longitude, latitude for popular schools  
 * :+1: Scraping distance between location to CBD ( Raffles Place MRT )
-<li> Exploratary Data Analysis [TBD]
-<li> Visualization [TBD]
-<li> Feature Selection [TBD]
-<li> Modelling [TBD]
-<li> Deployment [TBD]
-<li> Conclusion and Recommendations [TBD]
+* :+1: Scraping Postcodes for each HDB - for deployment purposes
+* :+1: Exploratary Data Analysis 
+* :+1: Visualization 
+* :+1: Feature Selection 
+* :+1: Modelling 
+* :+1: Deployment 
+* :+1: Conclusion and Recommendations 
 
 ## Deployment
 
@@ -45,14 +46,14 @@ Second Proof Of Concept deployed locally [done](https://github.com/andrewng88/st
 <li> ONEMap- specific scraping API for SG context
 <li> pandas - data processing
 <li> numpy - data processing
-<li> matplotlib - viz
 <li> plotly express - interactive viz
+<li> pydeck - 3D 
 <li> docker - containerization
 <li> streamlit - viz/ML frontend framework for ML
 <li> AWS - cloud hosting
 
 ## Visualization
-At the notebook level we will use matplotlib and plotly express
+At the notebook level we will use plotly express
 and we will convert useful charts to streamlit for deployment.
 
 ## Modelling
