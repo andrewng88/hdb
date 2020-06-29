@@ -21,7 +21,7 @@ Project started mid May 2020 and due to complete by mid April.
 ### Progress
 
 * :+1:Brainstorm on the problem and technology to be used 
-<li> Feature Engineering
+* <li> Feature Engineering
 * :+1: General data cleaning before Feature Engineering ( as below )
 * :+1: Scraping longitude, latitude for MRTs untill 2025 ( includes those that are yet to be opened but with price factored in )
 * :+1: Scraping longitude, latitude for popular schools  
