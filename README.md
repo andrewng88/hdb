@@ -63,17 +63,16 @@ Linear Regression is the vanila model whereby there is no regularization introdu
 Lasso, Ridge and Elasticnet has regularization which will prevent overfitting.
 
 Usually **Lasso** will be used for feature selection<br>
-![](https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1543418448/eq11_ij4mms.png)
+![](https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1543418448/eq11_ij4mms.png)<br>
 The LHS is the minimization cost function and the RHS is the regularization term. The features are
 optimized based on Beta and there is high tendency that features will be zero-ed. 
 The lambda is the hyperparameter that can be optimzied by sklearn<br>. Lambda of zero will convert Lasso
 to plain Linear Regression. <br>Drawing parallel to sklearn , alpha is the same as lambda.
-
-![](https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1543418449/eq7_ylxudw.png)
+<br>
+![](https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1543418449/eq7_ylxudw.png)<br>
 With respect to **Ridge**, the beta is squared hence the tendency to reduce the co-efficients to infinitesimal 
 but not zero. It helps with reducing multi-collinearity too.
-
-
+<br>
 For **Elasticnet**, it's the combi between Lasso and Ridge. You can see the two terms there.<br>
 ![](https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1543418448/eq12_vh6ilt.png)
 When alpha is 0, it will be full Ridge.<br>
@@ -100,13 +99,7 @@ Hence, feature selection will be useful in this area.
 * RMSE is selected as has the same unit as the dependent variable. If we have an RMSE of $10,000 it means our prediction is off by exact figure
 
 
-
 ## Author
 
 **Andrew Ng ** - [linkedin](https://www.linkedin.com/in/sc-ng-andrew/)<br>
 **Lau Lee Ling ** - [linkedin](https://www.linkedin.com/in/lauleeling/)
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
