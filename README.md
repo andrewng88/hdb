@@ -1,7 +1,8 @@
 ## Demo/Deployment
 
-[Demo Deployed at AWS](https://bit.ly/3io2TYZ)
-![](https://i.imgur.com/JNCq2w7.gifv)
+[Demo Deployed at AWS](https://bit.ly/3io2TYZ)<br>
+
+<img src="https://i.imgur.com/JNCq2w7.gif" alt="Your image title" width="500"/>
 
 # Prediction of resale HDB ( House ) price in Singapore
 
@@ -18,7 +19,7 @@ Data timeline from 1990 to 2019.
 ### Progress
 
 * :+1:Brainstorm on the problem and technology to be used 
-* <li> Feature Engineering
+* :+1 Feature Engineering
 * :+1: General data cleaning before Feature Engineering ( as below )
 * :+1: Scraping longitude, latitude for MRTs untill 2025 ( includes those that are yet to be opened but with price factored in )
 * :+1: Scraping longitude, latitude for popular schools  
