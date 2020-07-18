@@ -2,6 +2,10 @@
 ![](https://www.99.co/blog/singapore/wp-content/uploads/2018/09/geylang-pasir-ris.jpg)
 <sup>image courtesy of 99.co</sup>
 
+## Demo/Deployment
+
+[Demo Deployed at AWS](https://bit.ly/3io2TYZ)
+
 # Prediction of resale HDB ( House ) price in Singapore
 
 Aside from solving the core problem of prediction(regression) we will be doing EDA to 
@@ -13,10 +17,6 @@ Aside from solving the core problem of prediction(regression) we will be doing E
 ## Dataset
 Obtained from [data.gov.sg](https://data.gov.sg/dataset/resale-flat-prices)<br>
 Data timeline from 1990 to 2019.
-
-## Timeline
-
-Project started mid May 2020 and due to complete by mid April.
 
 ### Progress
 
@@ -33,11 +33,6 @@ Project started mid May 2020 and due to complete by mid April.
 * :+1: Modelling 
 * :+1: Deployment 
 * :+1: Conclusion and Recommendations 
-
-## Deployment
-
-Initial Proof Of Concept deployed to AWS[done](https://github.com/andrewng88/streamlit_aws)
-Second Proof Of Concept deployed locally [done](https://github.com/andrewng88/streamlit_model) 
 
 ## Technology used
 
@@ -99,7 +94,7 @@ Hence, feature selection will be useful in this area.
 * RMSE is selected as has the same unit as the dependent variable. If we have an RMSE of $10,000 it means our prediction is off by exact figure
 
 
-## Author
+## Team
 
 **Andrew Ng ** - [linkedin](https://www.linkedin.com/in/sc-ng-andrew/)<br>
 **Lau Lee Ling ** - [linkedin](https://www.linkedin.com/in/lauleeling/)
