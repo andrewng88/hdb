@@ -1,10 +1,8 @@
-
-![](https://www.99.co/blog/singapore/wp-content/uploads/2018/09/geylang-pasir-ris.jpg)
-<sup>image courtesy of 99.co</sup>
-
 ## Demo/Deployment
 
 [Demo Deployed at AWS](https://bit.ly/3io2TYZ)
+![](https://i.imgur.com/JNCq2w7.gifv)
+
 
 # Prediction of resale HDB ( House ) price in Singapore
 
