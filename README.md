@@ -1,8 +1,8 @@
 ## Demo/Deployment
 
-[Demo Deployed at AWS](https://bit.ly/3io2TYZ)<br>
+[Demo Deployed at AWS](https://bit.ly/3io2TYZ)
 
-#![text](https://i.imgur.com/jIt3goY.gif)
+![text](https://i.imgur.com/jIt3goY.gif)
 
 # Prediction of resale HDB ( House ) price in Singapore
 
