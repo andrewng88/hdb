@@ -2,7 +2,7 @@
 
 [Demo Deployed at AWS](https://bit.ly/3io2TYZ)<br>
 
-<img src="https://i.imgur.com/JNCq2w7.gif" alt="Your image title" width="500"/>
+<img src="https://i.imgur.com/jIt3goY.gif" alt="Your image title" width="500"/>
 
 # Prediction of resale HDB ( House ) price in Singapore
 
