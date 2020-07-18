@@ -3,7 +3,6 @@
 [Demo Deployed at AWS](https://bit.ly/3io2TYZ)
 ![](https://i.imgur.com/JNCq2w7.gifv)
 
-
 # Prediction of resale HDB ( House ) price in Singapore
 
 Aside from solving the core problem of prediction(regression) we will be doing EDA to 
