@@ -1,6 +1,5 @@
 ## Demo/Deployment
 
-[Demo Deployed at AWS](https://bit.ly/3io2TYZ)
 
 <img src="demo.gif"/>
 
